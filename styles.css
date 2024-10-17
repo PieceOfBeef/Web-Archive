@@ -1,0 +1,78 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark grey background for dark mode */
+    color: #e0e0e0; /* Light grey text */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes full height for footer */
+}
+
+header {
+    background: #1e1e1e; /* Slightly lighter black for header */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    flex: 1; /* Allows main to grow and push footer down */
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center; /* Center the search elements */
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #444; /* Darker grey border */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #1e1e1e; /* Dark grey background for input */
+    color: #e0e0e0; /* Light grey text */
+}
+
+#search button {
+    padding: 10px 20px;
+    background-color: #444; /* Darker grey background for button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search button:hover {
+    background-color: #666; /* Lighter grey on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #1e1e1e; /* Dark grey footer background */
+    color: white; /* White text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
